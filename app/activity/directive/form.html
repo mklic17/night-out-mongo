@@ -1,0 +1,55 @@
+<a ui-sref="activity" class="green"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</a>
+<form ng-submit="vm.addSubmission()">
+  <div class="row">
+    <div class="small-11 small-centered columns">
+      <div class="row">
+
+        <div class="small-2 columns">
+          <input type="text" ng-model="vm.newTask.location" required placeholder="State">
+        </div>
+
+        <div class="small-2 columns">
+          <select ng-model="vm.newTask.age" required>
+            <option value="" disabled selected>Age</option>
+            <option value="No">Under 21</option>
+            <option value="Yes">21+</option>
+          </select>
+        </div>
+
+        <div class="small-3 columns">
+          <select ng-model="vm.newTask.category" class="category" name="category" required>
+            <option value="" disabled selected>Category</option>
+            <option value="Date">Date Night</option>
+            <option value="Friends">Friends</option>
+            <option value="Family">Family</option>
+            <option value="Alone">Alone</option>
+          </select>
+        </div>
+
+        <div class="small-2 columns">
+          <select ng-model="vm.newTask.price" class="price" name="price" required>
+            <option value="" disabled selected>Price</option>
+            <option value="$0-$25">$0-$25</option>
+            <option value="$25-$50">$25-$50</option>
+            <option value="$50-$100">$50-$100</option>
+            <option value="$100+">$100+</option>
+          </select>
+        </div>
+
+        <div class="small-3 columns">
+          <input type="text" ng-model="vm.newTask.summary" placeholder="Short Summary..." class="place" name="place" required>
+        </div>
+
+      </div>
+
+      <div class="small-10 small-centered columns">
+        <textarea ng-model="vm.newTask.fullDesc" rows="4" cols="50" placeholder="Full description..."></textarea>
+      </div>
+
+      <div class="small-7 small-centered columns">
+        <button type="submit" class="button">Submit</button>
+      </div>
+
+    </div>
+  </div>
+</form>

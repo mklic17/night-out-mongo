@@ -1,0 +1,15 @@
+<nav class="menu">
+  <h1 class="name"><a ui-sref="home">The Night Out</a></h1>
+  <ul class="inline-list">
+    <li ng-show="vm.isLoggedIn()"><a ui-sref="discover">Discover</a></li>
+    <li ng-show="vm.isLoggedIn()"><a ui-sref="activity">Night</a></li>
+  </ul>
+
+  <ul class="inline-list hide-for-small-only account-action">
+    <li ng-show="vm.isLoggedIn()"><a data-reveal-id="myModal" ng-bind="vm.user"></a></li>
+    <li ng-hide="vm.isLoggedIn()"><a data-reveal-id="myModal" ui-sref="login">Sign In</a></li>
+    <li ng-hide="vm.isLoggedIn()"><a ui-sref="register" data-reveal-id="myModal">Create Account</a></li>
+    <li ng-show="vm.isLoggedIn()"><a ng-click="vm.logout()" data-reveal-id="myModal">Logout</a></li>
+
+  </ul>
+</nav>

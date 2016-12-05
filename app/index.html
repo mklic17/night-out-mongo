@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="mainModule" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="mainModule" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="mainModule" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="mainModule" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Night Out</title>
+    <link rel="stylesheet" href="content/app.css" charset="utf-8">
+    <link rel="stylesheet" href="content/foundation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <xt-navbar></xt-navbar>
+    <div ui-view></div>
+
+
+
+
+    <!-- <script src="bower_components/angular-loader/angular-loader.min.js"></script> -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- main Module -->
+    <script src="mainModule.js"></script>
+    <script src="constant.js"></script>
+
+    <!-- home Modules -->
+    <script src="home/home.module.js"></script>
+    <script src="home/route-config.js"></script>
+
+    <!-- layout Module -->
+    <script src="layout/layout.module.js"></script>
+    <script src="layout/navbar/navbar.directive.js"></script>
+
+    <!-- activity Module -->
+    <script src="activity/activity.module.js"></script>
+    <script src="activity/activity.controller.js"></script>
+    <script src="activity/route-config.js"></script>
+    <script src="activity/activity.Factory.js"></script>
+    <script src="activity/directive/form.js"></script>
+    <script src="activity/directive/table.js"></script>
+
+    <!-- discover Module -->
+    <script src="discover/discover.module.js"></script>
+    <script src="discover/discover.controller.js"></script>
+    <script src="discover/route-config.js"></script>
+    <script src="discover/discover.factory.js"></script>
+    <script src="discover/discover/search.directive.js"></script>
+    <script src="discover/discover/results.directive.js"></script>
+
+
+    <!-- auth and Register Module -->
+    <!-- <script src="auth/auth.module.js"></script>
+    <script src="auth/auth.factory.js"></script>
+    <script src="register/createAccount.js"></script>
+    <script src="auth/route-config.js"></script>
+    <script src="register/register.module.js"></script>
+    <script src="register/createAccount.js"></script> -->
+
+    <!-- Trying auth a different way Auth2Module -->
+    <script src="auth2/auth.module.js"></script>
+    <script src="auth2/auth.controller.js"></script>
+    <script src="auth2/route-config.js"></script>
+    <script src="auth2/auth.factory.js"></script>
+    <script src="auth2/current-user.service.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="medium-6 medium-centered large-4 large-centered columns">
+
+        <form ng-submit="vm.register(vm.newUser)" class="log-in-form">
+
+            <div class="row column" id="start">
+                <h4 class="text-center">Register</h4>
+                <label>Name
+                    <input type="text" placeholder="Name" ng-model="vm.newUser.name" required>
+                </label>
+
+                <label>Username
+                    <input type="text" placeholder="Name" ng-model="vm.newUser.username" required>
+                </label>
+
+                <!-- <label>Email
+                  <input type="text" placeholder="somebody@example.com" ng-model="vm.user.email">
+                </label> -->
+
+                <label>Password
+                  <input type="password" placeholder="Password" ng-model="vm.newUser.password" required>
+                </label>
+                <label>Password Confirmation
+                  <input type="password" placeholder="Password" ng-model="vm.newUser.passwordConfirmation" required>
+                </label>
+
+                <p><button type="submit" class="button expanded">Create an Account</button></p>
+                <!-- <p class="text-center"><a href="#">Forgot your password?</a></p> -->
+                <p class="center">Already have an Account? <a ui-sref="login">Login</a>
+            </div>
+        </form>
+
+    </div>
+</div>

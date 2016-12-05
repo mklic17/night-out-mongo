@@ -1,0 +1,30 @@
+<a ui-sref="form" class="toTable green">Add event <i class="fa fa-plus"></i></a>
+<div class="row">
+  <div class="small-12 columns">
+    <center><h5>Night events for (a location)</h5></center> <!-- Make this be the location -->
+    <table>
+      <thead>
+        <tr>
+          <th>21+</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Summary</th>
+          <th>Likes</th>
+          <th>Time</th>
+          <!-- <th></th> -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="task in vm.tasks.slice().reverse()">
+          <td>{{ task.age }}</td>
+          <td>{{ task.price }}</td>
+          <td>{{ task.category }}</td>
+          <td>{{ task.summary }}</td>
+          <td>{{ task.likes }} <a ng-click="vm.subtractOne(task)" class="icons green"><i class="fa fa-thumbs-down"></i></a>   <a ng-click="vm.addOne(task)" class="icons green"><i class="fa fa-thumbs-up"></i></a></td>
+          <td>{{ vm.getTime(task.time) }}</td>
+          <!-- <td><a ng-click="vm.remove(task)"><i class="fa fa-remove green"></i></a></td> -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
